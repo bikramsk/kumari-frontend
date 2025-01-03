@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ :root {
+--font_primary: Begum, serif;
+--font_secondary: Inter, sans-serif;
+--font_tertiary: Inter, sans-serif;
+--font_quaternary: Inter, sans-serif;
+--font_generic: Inter, sans-serif;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */ 
