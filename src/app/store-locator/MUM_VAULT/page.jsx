@@ -62,7 +62,7 @@ const mumVault = () => {
       </div>
 
     
-      <div className=" flex justify-center items-center h-screen p-16"> 
+      <div className="flex h-screen p-8"> 
         <img
           src="/images/store-locator/store/store-banner_1.jpg"
           alt="Corporate Office"
@@ -76,20 +76,11 @@ const mumVault = () => {
           <h2 className="font-bold text-gray-800 text-xl mb-5">Store Hours</h2>
           <div className="flex flex-wrap list-none -mb-1 ">
             <li className="max-lg:w-1/3 max-md:w-1/2 w-1/2 lg:-mr-16">
-              <a className="text-gray-600 hover:text-gray-800">Jan 2, Today</a>
+              <a className="text-gray-600 hover:text-gray-800">Jan 3, Today</a>
             </li>
             <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
               <a className="text-gray-600  hover:text-gray-800">
-                11:00 am - 8:00 pm
-              </a>
-            </li>
-
-            <li className="max-lg:w-1/3 max-md:w-1/2 mb-1 w-1/2 lg:-mr-16">
-              <a className="text-gray-600 hover:text-gray-800">Jan 3, Fri</a>
-            </li>
-            <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
-              <a className="text-gray-600 hover:text-gray-800">
-                11:00 am - 8:00 pm
+              9:00 am - 5:00 pm
               </a>
             </li>
 
@@ -98,7 +89,7 @@ const mumVault = () => {
             </li>
             <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
               <a className="text-gray-600 hover:text-gray-800">
-                11:00 am - 8:00 pm
+              9:00 am - 5:00 pm
               </a>
             </li>
 
@@ -107,7 +98,7 @@ const mumVault = () => {
             </li>
             <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
               <a className="text-gray-600 hover:text-gray-800">
-                11:00 am - 8:00 pm
+                Closed
               </a>
             </li>
 
@@ -116,7 +107,7 @@ const mumVault = () => {
             </li>
             <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
               <a className="text-gray-600 hover:text-gray-800">
-                11:00 am - 8:00 pm
+              9:00 am - 5:00 pm
               </a>
             </li>
 
@@ -125,7 +116,7 @@ const mumVault = () => {
             </li>
             <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
               <a className="text-gray-600 hover:text-gray-800">
-                11:00 am - 8:00 pm
+              9:00 am - 5:00 pm
               </a>
             </li>
 
@@ -134,7 +125,16 @@ const mumVault = () => {
             </li>
             <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
               <a className="text-gray-600 hover:text-gray-800">
-                11:00 am - 8:00 pm
+              9:00 am - 5:00 pm
+              </a>
+            </li>
+
+            <li className="max-lg:w-1/3 max-md:w-1/2 mb-1 w-1/2 lg:-mr-16">
+              <a className="text-gray-600 hover:text-gray-800">Jan 9, Thru</a>
+            </li>
+            <li className="lg:w-1/3 max-md:w-1/2 mb-1 w-1/2">
+              <a className="text-gray-600 hover:text-gray-800">
+              9:00 am - 5:00 pm
               </a>
             </li>
           </div>
