@@ -1,5 +1,5 @@
 "use client";
-import GoogleMapSection from "../../../components/GoogleMapSection";
+import GoogleMapSection from "../../components/GoogleMapSection";
 import Image from "next/image";
 import { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";

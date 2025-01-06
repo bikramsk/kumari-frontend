@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import GoogleMapSection from "../../../../components/GoogleMapSection";
+import GoogleMapSection from "../../../components/GoogleMapSection";
 
 const CarouselData = [
   {

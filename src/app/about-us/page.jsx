@@ -143,14 +143,13 @@ const About = () => {
             />
             <div className="p-6">
               <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                PURE
+                ETHICAL
               </h1>
               <p className="leading-relaxed mb-3 ">
-                We are always on the lookout to create something that sparks joy
-                every time you lay eyes on it. This includes using 14k to 24k
-                gold to create every piece that allows for customisation. Each
-                piece comes with authenticity certification and warranty so that
-                you always stay gold.
+                We are in love with our planet like you. That is why we source
+                and create with minimum damage to our surroundings. By using
+                recyclable and reusable materials, we want to continue to create
+                beautiful jewellery for a long, long time.
               </p>
             </div>
           </div>
@@ -167,14 +166,13 @@ const About = () => {
             />
             <div className="p-6">
               <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                PURE
+                DEVOTED
               </h1>
               <p className="leading-relaxed mb-3">
-                We are always on the lookout to create something that sparks joy
-                every time you lay eyes on it. This includes using 14k to 24k
-                gold to create every piece that allows for customisation. Each
-                piece comes with authenticity certification and warranty so that
-                you always stay gold.
+                You’re at the heart of everything we do. And we are committed to
+                making you feel wonderful every time you shop with us. So expect
+                to see lifetime buyback, free resizing, and no-questions-asked
+                exchange as the norm here.
               </p>
             </div>
           </div>
@@ -186,10 +184,10 @@ const About = () => {
           <Image src="/images/our-roots.jpg" width={740} height={955} alt="" />
         </div>
 
-        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 max-lg:text-center">
+        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 ">
           <span className="text-2xl">Our</span> <br />
           <h1 className="text-5xl ">ROOTS</h1>
-          <p className=" leading-relaxed text-base my-8">
+          <p className=" leading-relaxed  my-8">
             We are in sync with the time because we have been doing this for a
             long time. While Kumari is new, its mission to craft authentic
             stories into jewellery has been part of our heritage at DP Jewel
@@ -215,80 +213,113 @@ const About = () => {
 
       <div className="container  mx-auto flex flex-row flex-wrap my-6">
         <div className="w-1/2  max-lg:w-full">
-          <Image src="/images/vikas-kataria.jpg" width={666} height={724} alt="" />
+          <Image
+            src="/images/vikas-kataria.jpg"
+            width={666}
+            height={724}
+            alt=""
+          />
         </div>
 
-        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 max-lg:text-center">
-          
+        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 ">
           <h1 className="text-5xl italic ">VIKAS KATARIA</h1>
           <span className="text-sm">FOUNDER & OWNER</span>
 
           <p className="text-base my-8">
-          Vikas Kataria, founder and owner of Kumari Fine Jewellery, brings a visionary approach that redefines the language of jewellery and luxury with a contemporary Indian edge. Hailing from a lineage of successful jewellers, Vikas brings with him not just a heritage of craftsmanship but an innate understanding of the art of making and selling jewellery. With decades of experience in the industry, he effortlessly weaves together tradition and modernity, crafting a fitting tribute to femininity that resonates with the boldness and boundless spirit of the Indian woman. As the torchbearer of his family's legacy and possessing the acumen of a true founder, Vikas propels Kumari forward with a forward-thinking vision that speaks volumes beyond the materials it's made of.   
+            Vikas Kataria, founder and owner of Kumari Fine Jewellery, brings a
+            visionary approach that redefines the language of jewellery and
+            luxury with a contemporary Indian edge. Hailing from a lineage of
+            successful jewellers, Vikas brings with him not just a heritage of
+            craftsmanship but an innate understanding of the art of making and
+            selling jewellery. With decades of experience in the industry, he
+            effortlessly weaves together tradition and modernity, crafting a
+            fitting tribute to femininity that resonates with the boldness and
+            boundless spirit of the Indian woman. As the torchbearer of his
+            family's legacy and possessing the acumen of a true founder, Vikas
+            propels Kumari forward with a forward-thinking vision that speaks
+            volumes beyond the materials it's made of.
           </p>
-         
         </div>
-
-       
-
       </div>
 
       <div className="container  mx-auto flex flex-row flex-wrap my-6">
-        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 max-lg:text-center">
-          
+        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9  order-1 max-lg:order-2">
           <h1 className="text-5xl italic ">SUPRIYA KATARIA</h1>
           <span className="text-sm">Co-Founder</span>
 
           <p className="text-base my-8">
-          Supriya stands as the dynamic force alongside Vikas, instrumental in breathing life into this visionary endeavour. Representing the voice of the contemporary Indian woman, she brings a keen understanding of current trends and the desires of the modern woman. With a finger on the pulse of the times, Supriya propels the brand forward, ensuring its unwavering relevance and resonance with today's women. Her perspective shapes Kumari's offerings, infusing them with an energy that aligns perfectly with the aspirations of the women they are designed for.   
+            Supriya stands as the dynamic force alongside Vikas, instrumental in
+            breathing life into this visionary endeavour. Representing the voice
+            of the contemporary Indian woman, she brings a keen understanding of
+            current trends and the desires of the modern woman. With a finger on
+            the pulse of the times, Supriya propels the brand forward, ensuring
+            its unwavering relevance and resonance with today's women. Her
+            perspective shapes Kumari's offerings, infusing them with an energy
+            that aligns perfectly with the aspirations of the women they are
+            designed for.
           </p>
-    </div>
-    <div className="w-1/2  max-lg:w-full">
-          <Image src="/images/supriya-kataria.jpg" width={666} height={724} alt="" />
-    </div>
-
-       
-
+        </div>
+        <div className="w-1/2  max-lg:w-full order-1">
+          <Image
+            src="/images/supriya-kataria.jpg"
+            width={666}
+            height={724}
+            alt=""
+          />
+        </div>
       </div>
 
       <div className="container  mx-auto flex flex-row flex-wrap my-6">
         <div className="w-1/2  max-lg:w-full">
-          <Image src="/images/yash_kataria.jpg" width={666} height={724} alt="" />
+          <Image
+            src="/images/yash_kataria.jpg"
+            width={666}
+            height={724}
+            alt=""
+          />
         </div>
 
-        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 max-lg:text-center">
-          
+        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 ">
           <h1 className="text-5xl italic ">YASH KATARIA</h1>
           <span className="text-sm">Co-Founder</span>
 
           <p className="text-base my-8">
-          Yash Kataria embodies the spirit of innovation and global sensibility that Kumari prides itself on. He brings a vision to make Kumari a globally benchmarked brand, celebrated not only for its exquisite designs but also for its role in shaping the future of jewellery. With an intuitive grasp of the ever-evolving fashion landscape, Yash's contributions to Kumari are marked by his ability to anticipate and influence trends, ensuring the brand remains at the cutting edge of the jewellery industry. His global understanding extends beyond design, incorporating a deep appreciation for craftsmanship, sustainability, and the narrative power of jewellery.   
+            Yash Kataria embodies the spirit of innovation and global
+            sensibility that Kumari prides itself on. He brings a vision to make
+            Kumari a globally benchmarked brand, celebrated not only for its
+            exquisite designs but also for its role in shaping the future of
+            jewellery. With an intuitive grasp of the ever-evolving fashion
+            landscape, Yash's contributions to Kumari are marked by his ability
+            to anticipate and influence trends, ensuring the brand remains at
+            the cutting edge of the jewellery industry. His global understanding
+            extends beyond design, incorporating a deep appreciation for
+            craftsmanship, sustainability, and the narrative power of jewellery.
           </p>
-         
         </div>
-
-       
-
       </div>
 
-      <div className="container  mx-auto flex flex-row flex-wrap my-6">
-        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9 max-lg:text-center">
-          
+      <div className="container  mx-auto flex  flex-wrap my-6">
+        <div className="flex-col w-1/2 mt-64 px-24 justify-center max-xl:my-0 max-lg:w-full max-lg:my-9  max-lg:order-2">
           <h1 className="text-5xl italic ">AMIT BANDI</h1>
           <span className="text-sm">CEO</span>
 
-          <p className="text-base my-8">
-          Amit Bandi, CEO of Kumari Fine Jewellery, is the visionary architect behind the brand. With two decades steeped in the world of jewellery, he carries the knowledge and insight necessary to forge a brand like Kumari from the ground up. A driving force in strategy and execution, Amit crafts the blueprint for success. From selecting the right collaborators to steering business development and strategy, his expertise lays the foundation for Kumari's remarkable journey. His strategic acumen and business prowess infuse the brand with a distinctive identity, ensuring that every facet of Kumari resonates with the essence of modern luxury and innovation.   
+          <p className="my-8 text-wrap">
+            Amit Bandi, CEO of Kumari Fine Jewellery, is the visionary architect
+            behind the brand. With two decades steeped in the world of
+            jewellery, he carries the knowledge and insight necessary to forge a
+            brand like Kumari from the ground up. A driving force in strategy
+            and execution, Amit crafts the blueprint for success. From selecting
+            the right collaborators to steering business development and
+            strategy, his expertise lays the foundation for Kumari's remarkable
+            journey. His strategic acumen and business prowess infuse the brand
+            with a distinctive identity, ensuring that every facet of Kumari
+            resonates with the essence of modern luxury and innovation.
           </p>
-    </div>
-    <div className="w-1/2  max-lg:w-full">
+        </div>
+        <div className="w-1/2  max-lg:w-full order-1">
           <Image src="/images/amit_bandi.jpg" width={666} height={724} alt="" />
-    </div>
-
-       
-
+        </div>
       </div>
-
     </div>
   );
 };

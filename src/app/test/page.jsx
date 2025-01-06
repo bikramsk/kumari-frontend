@@ -1,12 +1,11 @@
-import React from 'react'
+const test = () => {
+  
 
-const page = () => {
   return (
-    <div>
-      hello
+    <div className='bg-slate-500 min-h-screen'>
+      test
     </div>
-  )
-}
+  );
+};
 
-export default page
-
+export default test;
