@@ -35,22 +35,19 @@ export default function TestimonialSlider({ testimonials }) {
               <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
                 <div className="flex flex-col py-5 sm:p-6">
                   <div className="mt-6 flex flex-col gap-3">
-                  
-                    <span className="inline-flex rounded-full">
-                      <Image
-                        loader={imageLoader}
-                        className="w-full"
-                        height={200}
-                        width={200}
-                        alt={testimonial.name}
-                        src={testimonial.imgSrc}
-                        loading="lazy"
-                     />
-                    </span>
-                    <div>
-                     <Link href="https://www.instagram.com/reel/C3MyW95pgWJ/?igsh=NTFlNTRja2ducnM2"> <p className="text-xl tracking-wide uppercase font-semibold text-gray-900 dark:text-white">
+                  {testimonial.url && (
+                    <><Link href={testimonial.url}>
+                      <span className="inline-flex rounded-full">                       
+<img alt={testimonial.name} className="w-full h-auto object-cover mb-2 " src={testimonial.imgSrc} />
+ </span>
+                      </Link>
+                      </>
+                    
+                  )}
+                    <div>{testimonial.url && ( <Link href={testimonial.url}>
+                     <p className="text-xl tracking-wide uppercase font-semibold text-gray-900 dark:text-white">
                         {testimonial.name}
-                      </p></Link>
+                      </p></Link>   )}
                       <p className="text-md text-gray-500 dark:text-gray-400">
                         {testimonial.date}
                       </p>

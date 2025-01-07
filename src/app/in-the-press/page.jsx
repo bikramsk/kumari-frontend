@@ -4,28 +4,32 @@ import TestimonialSlider from "@/components/ui/testimonials-slider";
 
 const testimonials = [
   {
-    imgSrc: "images/in-the-press/ashna.jpg",
+    imgSrc: "/images/in-the-press/ashna.jpg",
     name: "Ashna Chand",
     date: "Feburary 2024",
     role: "Fashion and Lifestyle Influencer",
+    url:"http://www.instagram.com/reel/C3MyW95pgWJ/?igsh=NTFlNTRja2ducnM2",
   },
   {
-    imgSrc: "images/in-the-press/dhriti.jpg",
+    imgSrc: "/images/in-the-press/dhriti.jpg",
     name: "Dhriti Mehra",
     date: "Feburary 2024",
     role: "Fashion and Lifestyle Influencer",
+    url:"http://www.instagram.com/reel/C3NvNAZxZA3/?igsh=MTdxaTF6NG0wc2F2bA",
   },
   {
-    imgSrc: "images/in-the-press/kritika.jpg",
+    imgSrc: "/images/in-the-press/kritika.jpg",
     name: "Kritika Khurana",
     date: "Feburary 2014",
     role: "Fashion Influencer",
+    url:"http://www.instagram.com/reel/C3NmrMSta-P/?igsh=MXVxb2p0OTRxeWhlMw",
   },
   {
-    imgSrc: "images/in-the-press/yashashree.jpg",
+    imgSrc: "/images/in-the-press/yashashree.jpg",
     name: "Yashashree Rao",
     date: "Feburary 2014",
     role: "Digital Creator",
+    url:"http://www.instagram.com/reel/C3LHY4ORRwJ/?igsh=Z29vOW02eXVnd3gz",
   },
 ];
 

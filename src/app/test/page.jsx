@@ -1,11 +1,9 @@
-const test = () => {
-  
+import React from 'react'
 
+const Test = () => {
   return (
-    <div className='bg-slate-500 min-h-screen'>
-      test
-    </div>
-  );
-};
+    <div>Test</div>
+  )
+}
 
-export default test;
+export default Test
