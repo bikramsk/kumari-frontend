@@ -2,9 +2,7 @@ import React from 'react'
 
 const Test = () => {
   return (
-    <div>
-      hello
-      </div>
+    <div>test page</div>
   )
 }
 
