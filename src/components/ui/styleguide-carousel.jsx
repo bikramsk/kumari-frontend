@@ -3,33 +3,18 @@ import React from "react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { ChevronLeftIcon, ChevronRightIcon, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 
-const Carousel = () => {
-  const cards = [
-    {
-      id: 1,
-      images: ["/images/kumari-guides/rfas0124-wh-k-r_36_1.jpg"],
-    },
-    {
-      id: 2,
-      images: ["/images/kumari-guides/rfas0121-rs-k_1_1.jpg"],
-    },
-    {
-      id: 3,
-      images: ["/images/kumari-guides/esth0090-yl-k_2_1.jpg"],
-    },
-    {
-      id: 4,
-      images: ["/images/kumari-guides/reng0013-rs-k_1_1.jpg"],
-    },
-  ];
+const Carousel = ({ cards = [], slidesPerView }) => {
+  
+  if (!Array.isArray(cards) || cards.length === 0) {
+    return <div>No cards</div>; 
+  }
 
   return (
     <div className="relative">
       <Swiper
         spaceBetween={30}
-        slidesPerView={1}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -37,14 +22,14 @@ const Carousel = () => {
         loop={true}
         modules={[Navigation, Autoplay]}
         breakpoints={{
-          720: {
-            slidesPerView: 1,
+          320: { 
+            slidesPerView: 1, 
           },
-          768: {
-            slidesPerView: 2, //
+          720: {
+            slidesPerView: slidesPerView || 1, // Use the passed slidesPerView prop
           },
           1024: {
-            slidesPerView: 2, //
+            slidesPerView: slidesPerView || 1, 
           },
         }}
       >
@@ -82,12 +67,12 @@ const Carousel = () => {
 
         <div className="absolute top-1/2 left-0">
           <button className="swiper-button-prev">
-            <ChevronLeftIcon />
+           {/* <ChevronLeftIcon />  */}
           </button>
         </div>
         <div className="absolute top-1/2 right-0 ">
           <button className="swiper-button-next">
-            <ChevronRightIcon />
+         {/* <ChevronRightIcon />  */}
           </button>
         </div>
       </Swiper>

@@ -22,7 +22,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
-@layer base {
+/* @layer base {
   :root {
 --background: 0 0% 100%;
 --foreground: 0 0% 3.9%;
@@ -84,6 +84,47 @@ body {
   body {
     @apply bg-background text-foreground;
 }
-} 
+}  */
 
 
+.swiper-button-prev {
+  background-image: url(/icons/arrow-circle-right.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 25px !important;
+  height: 25px !important;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.5; 
+}
+
+.swiper-button-prev:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+  
+  .swiper-button-next {
+  background-image: url(/icons/arrow-circle-left.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 25px !important;
+  height: 25px !important;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.5; 
+  }
+  
+  .swiper-button-next:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-button-next::after {
+  display: none;
+  }
+  
+  .swiper-button-prev::after {
+  display: none;
+  }

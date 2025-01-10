@@ -1,25 +1,8 @@
-"use client"
 import Link from 'next/link';
 import BlogSlider from '@/components/ui/blogs-slider';
-import { useRouter } from 'next/navigation';
+import ReadMoreButton from '@/components/ui/readmorebutton';
 
 const Journal = () => {
-
-  const router = useRouter();
-
-  const handleNavigation = () => {
-    router.push('/blog/everything-you-need-to-know-about-jewellery-styling'); 
-  };
-
-  const handleArticle = () => {
-    router.push('/blog'); 
-  };
-
-  const handleLook = () => {
-    router.push('/jewelry'); 
-  };
- 
- 
 
   const blogs = [
     {
@@ -82,9 +65,7 @@ const Journal = () => {
             <p className="leading-relaxed mb-4">
               Our style-savvy jewellery experts have gone through your fantastic questions and have put together your accessory dilemmas.
             </p>
-            <button onClick={handleNavigation} className="bg-black px-6 py-3 text-white">
-              READ MORE
-            </button>
+            <ReadMoreButton link="/blog/everything-you-need-to-know-about-jewellery-styling" label="read more"/>
           </div>
          
           <div className="w-full md:w-2/3 order-2 max-md:order-1">
@@ -132,7 +113,7 @@ const Journal = () => {
 
 
         <div className='mx-auto text-center mt-4'>
-          <button onClick={handleArticle} className='uppercase px-8 py-4 bg-black text-white'>view all articles</button>
+        <ReadMoreButton link="/blog" label="view all articles"/>
         </div>
 
         <div className="flex flex-col md:flex-row my-10">
@@ -143,7 +124,7 @@ const Journal = () => {
 
           <div className="w-full md:w-1/2 p-4 order-2 max-md:order-2 flex flex-col items-center justify-center">
             <h1 className="text-gray-900 text-3xl md:text-4xl uppercase mb-4 lg:mt-24 ">SHOP the LOOK</h1>
-             <button onClick={handleLook} className="bg-black px-6 py-3 text-white">READ MORE</button>
+            <ReadMoreButton link="/jewelry" label="read more"/>
           </div>
 
         </div>
