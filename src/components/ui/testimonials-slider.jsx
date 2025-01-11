@@ -1,72 +1,73 @@
 "use client";
-
-import Image from "next/image";
-import { imageLoader } from "@/lib/imageLoader";
-import Autoplay from "embla-carousel-autoplay";
-import{
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/swiper-bundle.css";
 import Link from "next/link";
 
+const Carousel = ({ cards = [], slidesPerView = 1 }) => {
+  if (!Array.isArray(cards) || cards.length === 0) {
+    return <div>No cards</div>;
+  }
 
-
-export default function TestimonialSlider({ testimonials }) {
   return (
-    <section className="w-full py-4">
-      <div className="mx-auto lg:max-w-6xl">
-        <Carousel
-          options={{
-            loop: true,
-            align: "start",
-          }}
-          plugins={[
-            Autoplay({
-              delay: 2000,
-              stopOnInteraction: false, 
-            }),
-          ]}
-        >
-          <CarouselContent>
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
-                <div className="flex flex-col py-5 sm:p-6">
-                  <div className="mt-6 flex flex-col gap-3">
-                  {testimonial.url && (
-                    <><Link href={testimonial.url}>
-                      <span className="inline-flex rounded-full">                       
-<img alt={testimonial.name} className="w-full h-auto object-cover mb-2 " src={testimonial.imgSrc} />
- </span>
-                      </Link>
-                      </>
-                    
+    <div className="relative">
+      <Swiper
+        spaceBetween={30}
+        navigation
+        loop={true}
+        modules={[Navigation, Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          720: {
+            slidesPerView: slidesPerView,
+          },
+          1024: {
+            slidesPerView: slidesPerView,
+          },
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        touchEventsTarget="container" // Ensure touch events are captured
+      >
+        {cards.map((card) => (
+          <SwiperSlide key={card.id}>
+            <div className="overflow-hidden bg-gray-50 relative group">
+              <div className="flex flex-col">
+                {card.images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Product Image ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                ))}
+                <div>
+                  {card.url && (
+                    <Link href={card.url}>
+                      <p className="text-xl tracking-wide uppercase font-semibold text-gray-900 dark:text-white">
+                        {card.name}
+                      </p>
+                    </Link>
                   )}
-                    <div>{testimonial.url && ( <Link href={testimonial.url}>
-                     <p className="text-xl tracking-wide uppercase font-semibold text-gray-900 dark:text-white">
-                        {testimonial.name}
-                      </p></Link>   )}
-                      <p className="text-md text-gray-500 dark:text-gray-400">
-                        {testimonial.date}
-                      </p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
-                        {testimonial.role}
-                      </p>
-                    </div>
-                  </div>
+                  <p className="text-md text-gray-500 dark:text-gray-400">
+                    {card.date}
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    {card.role}
+                  </p>
                 </div>
-
-
-
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="lg:hidden absolute left-[-10px] top-1/2 -translate-y-1/2 text-black "/>
-          <CarouselNext className="lg:hidden  absolute right-[-0px] top-1/2 -translate-y-1/2 text-black " />
-        </Carousel>
-      </div>
-    </section>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
-}
+};
+
+export default Carousel;

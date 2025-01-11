@@ -1,39 +1,53 @@
 import React from "react";
 import Image from "next/image";
-import TestimonialSlider from "@/components/ui/testimonials-slider";
-
-const testimonials = [
-  {
-    imgSrc: "/images/in-the-press/ashna.jpg",
-    name: "Ashna Chand",
-    date: "Feburary 2024",
-    role: "Fashion and Lifestyle Influencer",
-    url:"http://www.instagram.com/reel/C3MyW95pgWJ/?igsh=NTFlNTRja2ducnM2",
-  },
-  {
-    imgSrc: "/images/in-the-press/dhriti.jpg",
-    name: "Dhriti Mehra",
-    date: "Feburary 2024",
-    role: "Fashion and Lifestyle Influencer",
-    url:"http://www.instagram.com/reel/C3NvNAZxZA3/?igsh=MTdxaTF6NG0wc2F2bA",
-  },
-  {
-    imgSrc: "/images/in-the-press/kritika.jpg",
-    name: "Kritika Khurana",
-    date: "Feburary 2014",
-    role: "Fashion Influencer",
-    url:"http://www.instagram.com/reel/C3NmrMSta-P/?igsh=MXVxb2p0OTRxeWhlMw",
-  },
-  {
-    imgSrc: "/images/in-the-press/yashashree.jpg",
-    name: "Yashashree Rao",
-    date: "Feburary 2014",
-    role: "Digital Creator",
-    url:"http://www.instagram.com/reel/C3LHY4ORRwJ/?igsh=Z29vOW02eXVnd3gz",
-  },
-];
+import Carousel from "@/components/ui/testimonials-slider";
 
 const InthePress = () => {
+  const mainCarouselItems = [
+    {
+      id: 1,
+      images: ["/images/in-the-press/ashna.jpg"],
+      name: "Ashna Chand",
+      date: "Feburary 2024",
+      role: "Fashion and Lifestyle Influencer",
+      url: "http://www.instagram.com/reel/C3MyW95pgWJ/?igsh=NTFlNTRja2ducnM2",
+    },
+    {
+      id: 2,
+      images: ["/images/in-the-press/dhriti.jpg"],
+      name: "Dhriti Mehra",
+      date: "Feburary 2024",
+      role: "Fashion and Lifestyle Influencer",
+      url: "http://www.instagram.com/reel/C3NvNAZxZA3/?igsh=MTdxaTF6NG0wc2F2bA",
+    },
+    {
+      id: 3,
+      images: ["/images/in-the-press/kritika.jpg"],
+      name: "Kritika Khurana",
+      date: "Feburary 2014",
+      role: "Fashion Influencer",
+      url: "http://www.instagram.com/reel/C3NmrMSta-P/?igsh=MXVxb2p0OTRxeWhlMw",
+    },
+
+    {
+      id: 4,
+      images: ["/images/in-the-press/ashna.jpg"],
+      name: "Ashna Chand",
+      date: "Feburary 2024",
+      role: "Fashion and Lifestyle Influencer",
+      url: "http://www.instagram.com/reel/C3MyW95pgWJ/?igsh=NTFlNTRja2ducnM2",
+    },
+    {
+      id: 5,
+      images: ["/images/in-the-press/yashashree.jpg"],
+      name: "Yashashree Rao",
+      date: "Feburary 2014",
+      role: "Digital Creator",
+      url: "http://www.instagram.com/reel/C3LHY4ORRwJ/?igsh=Z29vOW02eXVnd3gz",
+    },
+   
+  ];
+
   return (
     <section className=" container mx-auto">
       <div className="container py-24 mx-auto">
@@ -229,11 +243,14 @@ const InthePress = () => {
       </div>
 
       <div className="mx-2 mb-0 text-gray-700">
-        <h1 className="uppercase max-xl:ml-0  ml-20 text-2xl font-bold">
+        <h1 className="uppercase text-3xl font-semibold mb-6">
           As Seen On Instagram
         </h1>
 
-        <TestimonialSlider testimonials={testimonials} />
+     
+       <Carousel cards={mainCarouselItems} slidesPerView={4} />
+    
+       
       </div>
     </section>
   );
