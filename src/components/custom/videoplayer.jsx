@@ -1,16 +1,13 @@
-const VideoPlayer = () => {
+const VideoPlayer = ({ src }) => {
     return (
-        <div className="flex">
+        <div className="relative">
             <video
-                className="w-full  "
-                
-                controls
+                className="w-full"
                 autoPlay
                 loop
                 muted
-                
             >
-                <source src="/videos/sg-who-you-are.mp4" type="video/mp4" />
+                <source src={src} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>

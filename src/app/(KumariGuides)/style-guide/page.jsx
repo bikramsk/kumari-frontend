@@ -3,6 +3,11 @@ import Carousel from "@/components/ui/styleguide-carousel";
 import VideoPlayer from "@/components/custom/videoplayer";
 import ReadMoreButton from "@/components/ui/readmorebutton";
 
+const videoSources = {
+  videoSrc: '/videos/sg-who-you-are.mp4', 
+   
+};
+
 const StyleGuide = () => {
   const mainCarouselItems = [
     {
@@ -98,7 +103,7 @@ const StyleGuide = () => {
 
       <div className="flex items-center max-md:flex-col mt-8 gap-4">
         <div className="w-2/5 max-md:w-full ml-6">
-          <VideoPlayer />
+        <VideoPlayer src={videoSources.videoSrc} />
         </div>
 
         <div className="w-3/5 max-md:w-full ml-8 p-10">
